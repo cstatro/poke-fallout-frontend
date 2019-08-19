@@ -1,5 +1,5 @@
-import { logHello } from "./scripts/event-listeners/test-log.js";
+import { loadTitle } from "./scripts/event-listeners/startup-sequence/load-title.js";
 
 window.addEventListener("DOMContentLoaded", () => {
-  logHello();
+  loadTitle();
 });

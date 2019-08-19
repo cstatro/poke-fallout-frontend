@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Pokemon-Solid";
+  src: url("./fonts/Pokemon\ Solid.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +21,41 @@
   width: 75%;
   height: 75%;
   background: black;
+}
+.title-area {
+  border: 1px solid white;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-text {
+  color: yellow;
+  letter-spacing: 2px;
+  font-family: "Pokemon-Solid";
+  font-size: 50px;
+}
+.start-button {
+  color: white;
+  background: rgb(122, 185, 122);
+  padding: 3px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.select-button {
+  color: white;
+  background: rgb(122, 185, 122);
+  padding: 3px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.title-form {
+  height: 30px;
+  font-size: 20px;
+  padding: 3px;
 }
