@@ -1,5 +1,6 @@
 import { greetingText1 } from "../../templates/start-new-game/01_Text.js";
 import { startThree } from "../../api-calls/fetch-requests.js";
+import { renderSelectStarter } from "./select-starter.js";
 
 export const startOpeningSequence = json => {
   const gameArea = document.querySelector(".game-area");
@@ -17,6 +18,6 @@ const attachClickListen = () => {
     const id = gameArea.dataset.user_id;
     console.log(id);
     dialogBox.remove();
-    startThree(id, "yo");
+    startThree(id, renderSelectStarter);
   });
 };

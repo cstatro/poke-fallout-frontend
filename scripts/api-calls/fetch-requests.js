@@ -13,5 +13,5 @@ export const registerUser = (config, callback) => {
 export const startThree = (userId, callback) => {
   fetch(`${URL}/start-three/${userId}`)
     .then(resp => resp.json())
-    .then(json => console.log(json));
+    .then(json => callback(json));
 };
