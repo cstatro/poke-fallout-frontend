@@ -1,13 +1,21 @@
 import {
   dispStarters,
-  starterDiv
+  starterArea
 } from "../../templates/start-new-game/02_select_starter.js";
 
 export const renderSelectStarter = json => {
   const gameArea = document.querySelector(".game-area");
-  console.log(gameArea);
-  console.log(json.data);
-  gameArea.innerHTML = starterDiv();
+  gameArea.innerHTML = starterArea();
   const starterRow = document.querySelector(".starter-div");
   starterRow.innerHTML = dispStarters(json.data);
+  attachClickListener();
+};
+
+const attachClickListener = () => {
+  const starterRow = document.querySelector(".starter-div");
+  starterRow.addEventListener("click", e => {
+    const userId = document.querySelector(".game-area").dataset.user_id;
+    const selectedStarter = e.target.closest(".starter-box").dataset.id;
+    console.log(selectedStarter, userId);
+  });
 };
