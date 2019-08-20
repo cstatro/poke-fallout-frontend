@@ -59,3 +59,15 @@
   font-size: 20px;
   padding: 3px;
 }
+
+.cut-scene-box-top {
+  border: 2px solid white;
+  height: 40%;
+  width: 80%;
+  background: blue;
+  margin: auto;
+  margin-top: 10px;
+}
+.cut-scene-box-top > p {
+  color: white;
+}
