@@ -59,3 +59,47 @@
   font-size: 20px;
   padding: 3px;
 }
+
+.cut-scene-box-top {
+  border: 2px solid white;
+  height: 40%;
+  width: 80%;
+  background: blue;
+  margin: auto;
+  margin-top: 10px;
+}
+.cut-scene-box-top > p {
+  color: white;
+}
+
+.starter-box {
+  display: flex;
+  background: rgb(226, 226, 172);
+  height: 300px;
+  width: 175px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.starter-box > img {
+  width: 70%;
+  height: auto;
+}
+.starter-name {
+  background: rgb(175, 175, 221);
+  padding: 4px;
+}
+
+.starter-details {
+  width: 100%;
+  height: 70px;
+  border: 1px solid black;
+}
+
+.starter-div {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  justify-content: center;
+}
