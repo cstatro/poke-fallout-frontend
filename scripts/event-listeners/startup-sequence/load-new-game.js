@@ -18,9 +18,8 @@ const attachButtonListen = () => {
       const config = postConfig(obj);
       console.log(obj);
       registerUser(config, startOpeningSequence);
-      console.log("hey");
+
       newFormSelect.reset();
     }
   });
 };
- 
