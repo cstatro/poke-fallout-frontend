@@ -1,3 +1,4 @@
+import { killRejects } from "../../api-calls/fetch-requests.js";
 import {
   dispStarters,
   starterArea
@@ -16,6 +17,6 @@ const attachClickListener = () => {
   starterRow.addEventListener("click", e => {
     const userId = document.querySelector(".game-area").dataset.user_id;
     const selectedStarter = e.target.closest(".starter-box").dataset.id;
-    console.log(selectedStarter, userId);
+    killRejects(userId, selectedStarter, "dd");
   });
 };
