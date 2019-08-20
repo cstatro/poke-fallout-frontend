@@ -9,3 +9,9 @@ export const registerUser = (config, callback) => {
     .then(resp => resp.json())
     .then(json => callback(json["data"]["attributes"]));
 };
+
+export const startThree = (userId, callback) => {
+  fetch(`${URL}/start-three/${userId}`)
+    .then(resp => resp.json())
+    .then(json => console.log(json));
+};
