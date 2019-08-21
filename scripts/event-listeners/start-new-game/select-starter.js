@@ -20,6 +20,7 @@ const attachClickListener = () => {
   starterRow.addEventListener("click", e => {
     const userId = document.querySelector(".game-area").dataset.user_id;
     const selectedStarter = e.target.closest(".starter-box").dataset.id;
+    document.querySelector(".starter-area").remove();
     killRejects(userId, selectedStarter, loadAssets);
   });
 };

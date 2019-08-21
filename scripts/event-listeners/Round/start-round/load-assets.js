@@ -4,7 +4,6 @@ import { makeStatDiv } from "../../../templates/Round/stat-div.js";
 import { renderPokemon } from "../../../templates/round/pokemon-card.js";
 
 export const loadAssets = () => {
-  document.querySelector(".starter-area").remove();
   const gameArea = document.querySelector(".game-area");
   loadUser(gameArea.dataset.name, renderAssetsFromJson);
 };
@@ -12,9 +11,7 @@ export const loadAssets = () => {
 const renderAssetsFromJson = json => {
   const pokemons = json.pokemons.filter(p => p.alive === true);
   const gameArea = document.querySelector(".game-area");
-  console.log(pokemons);
   objToDataSet(json, gameArea);
-  console.log(gameArea.dataset);
   renderUserStats();
   loadExistingPokemon(pokemons);
 };
