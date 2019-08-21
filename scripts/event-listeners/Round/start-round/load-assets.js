@@ -2,6 +2,7 @@ import { loadUser } from "../../../api-calls/fetch-requests.js";
 import { objToDataSet } from "../../../Helpers/mapObjToDataSet.js";
 import { makeStatDiv } from "../../../templates/Round/stat-div.js";
 import { renderPokemon } from "../../../templates/round/pokemon-card.js";
+import { attachNavListeners } from "./attach-nav-listeners.js";
 
 export const loadAssets = () => {
   const gameArea = document.querySelector(".game-area");
@@ -46,4 +47,5 @@ export const loadExistingPokemon = json => {
   json.forEach(poke =>
     poke_div.insertAdjacentHTML("beforeend", renderPokemon(poke))
   );
+  attachNavListeners();
 };
