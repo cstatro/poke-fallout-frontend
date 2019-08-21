@@ -1,9 +1,19 @@
 export const attachNavListeners = () => {
+  highLightListen();
   const nav = document.getElementById("nav-bar");
   nav.addEventListener("click", e => {
     if (e.target.id === "clean") {
-      console.log("got-em");
       clean();
+    }
+  });
+};
+
+const highLightListen = () => {
+  console.log("madeit");
+  const nav = document.getElementById("nav-bar");
+  nav.addEventListener("click", e => {
+    if (e.target.id != "clean") {
+      highLightButton(e.target.closest("button"));
     }
   });
 };
@@ -25,4 +35,13 @@ const clean = () => {
       gameArea.dataset.facility_cleanliness
     }`;
   }
+};
+
+const highLightButton = button => {
+  document.querySelectorAll(".nav-button").forEach(b => {
+    if (b != button) {
+      b.className = "nav-button";
+    }
+    button.className += " highlight-nav";
+  });
 };
