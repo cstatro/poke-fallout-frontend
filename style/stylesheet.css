@@ -23,9 +23,9 @@
   background: black;
 }
 .title-area {
-  border: 1px solid white;
-  height: 50%;
-  width: 50%;
+  /* border: 1px solid white; */
+  height: 70%;
+  width: 70%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -34,9 +34,10 @@
 }
 .title-text {
   color: yellow;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-family: "Pokemon-Solid";
-  font-size: 50px;
+  font-size: 80px;
+  text-shadow: 0.3vw 0.3vw 0 #7f807e;
 }
 .start-button {
   color: white;
@@ -44,6 +45,7 @@
   padding: 3px;
   border: 1px solid white;
   cursor: pointer;
+  margin-top: 20px;
 }
 .select-button {
   color: white;
