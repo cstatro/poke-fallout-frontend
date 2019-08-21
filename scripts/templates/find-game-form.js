@@ -1,3 +1,4 @@
+
 export const findForm = () => `<div class="title-area">
 <form name="find-game" id="find-game">
   <input
