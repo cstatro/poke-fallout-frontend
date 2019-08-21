@@ -67,6 +67,10 @@
   background: blue;
   margin: auto;
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 .cut-scene-box-top > p {
   color: white;
@@ -74,7 +78,7 @@
 
 .starter-box {
   display: flex;
-  background: rgb(226, 226, 172);
+  background: #a1c950;
   height: 300px;
   width: 175px;
   flex-direction: column;
@@ -90,14 +94,20 @@
   height: auto;
 }
 .starter-name {
+  font-size: 1.1rem;
   background: rgb(175, 175, 221);
   padding: 4px;
 }
 
 .starter-details {
-  width: 100%;
+  width: 90%;
   height: 70px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  padding: 8px;
+}
+.starter-details > p {
+  font-size: 0.75rem;
+  margin-top: 2px;
 }
 
 .starter-div {
