@@ -23,3 +23,16 @@ const attachButtonListen = () => {
     }
   });
 };
+
+const patchConfig = obj => ({
+  method: "PATCH",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json"
+  },
+  body: JSON.stringify(obj)
+});
+
+const standardPatch = (id, config) => {
+  fetch(`${url}/${id}`, config);
+};
