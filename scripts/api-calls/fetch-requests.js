@@ -23,5 +23,5 @@ export const startThree = (userId, callback) => {
 export const killRejects = (userId, keepId, callback) => {
   fetch(`${URL}/kill-rejects/${userId}/${keepId}`)
     .then(resp => resp.json())
-    .then(json => console.log(json));
+    .then(json => callback());
 };

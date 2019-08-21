@@ -1,4 +1,7 @@
 import { killRejects } from "../../api-calls/fetch-requests.js";
+
+import { loadAssets } from "../Round/start-round/load-assets.js";
+
 import {
   dispStarters,
   starterArea
@@ -17,6 +20,6 @@ const attachClickListener = () => {
   starterRow.addEventListener("click", e => {
     const userId = document.querySelector(".game-area").dataset.user_id;
     const selectedStarter = e.target.closest(".starter-box").dataset.id;
-    killRejects(userId, selectedStarter, "dd");
+    killRejects(userId, selectedStarter, loadAssets);
   });
 };
