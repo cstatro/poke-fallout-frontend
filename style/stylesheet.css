@@ -42,7 +42,7 @@
 .start-button {
   color: white;
   background: rgb(122, 185, 122);
-  padding: 3px;
+  padding: 10px;
   border: 1px solid white;
   cursor: pointer;
   margin-top: 20px;
@@ -50,7 +50,7 @@
 .select-button {
   color: white;
   background: rgb(122, 185, 122);
-  padding: 3px;
+  padding: 10px;
   border: 1px solid white;
   cursor: pointer;
   margin-top: 8px;
@@ -128,4 +128,12 @@
 
 #stats > div > p {
   font-size: 0.6rem;
+}
+#new-game {
+  display: flex;
+  flex-direction: column;
+}
+#find-game {
+  display: flex;
+  flex-direction: column;
 }
