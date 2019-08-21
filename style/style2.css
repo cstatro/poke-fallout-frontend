@@ -1,5 +1,8 @@
 
-
+@font-face {
+    font-family: "Pokemon-Solid";
+    src: url("./fonts/Pokemon\ Solid.ttf");
+  }
 
 body {
     margin: 0;
@@ -49,14 +52,23 @@ body {
     border: solid #1C161B .5vw;
     border-radius: .5vw;
 
-    font-size: 1em;
+    font-family: "Pokemon-Solid";
+    font-size: 1.2vw;
+    letter-spacing: .2vw;
+
+    text-shadow: .3vw .3vw 0 #363834;
 
     text-align: center;
 
     color: #DCFF19;
-    background: #1C161B
+    background: #1C161B;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
 
 
 
