@@ -74,10 +74,10 @@ export const renderPokemon = poke => `
         </div>
         <div class="pokemon-actions">
 
-            <button class="pokemon-action-button">None</button>
-            <button class="highlight-action">Meager</button>
-            <button class="pokemon-action-button">Modest</button>
-            <button class="pokemon-action-button">Generous</button>
+            <button data-food="0" class="pokemon-action-button">None</button>
+            <button data-food="1" class="highlight-action">Meager</button>
+            <button data-food="2" class="pokemon-action-button">Modest</button>
+            <button data-food="3" class="pokemon-action-button">Generous</button>
 
         </div>
 

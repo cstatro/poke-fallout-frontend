@@ -4,6 +4,8 @@ import { makeStatDiv } from "../../../templates/Round/stat-div.js";
 import { renderPokemon } from "../../../templates/round/pokemon-card.js";
 import { attachNavListeners } from "./attach-nav-listeners.js";
 import { attachPokeActionListeners } from "./attach-pokecard-listeners.js";
+import { fromSetUserData } from "../../../Helpers/objectFromDataset.js";
+import { getRoundData } from "../../../Helpers/roundDataSelection.js";
 
 export const loadAssets = () => {
   const gameArea = document.querySelector(".game-area");
@@ -38,16 +40,24 @@ const renderUserStats = () => {
   for (const key in statList) {
     statsDiv.innerHTML += makeStatDiv(key, statList[key]);
   }
+  //testing data grabs All this can be deleted eventually
+
+  const testObject = fromSetUserData(userData);
+  console.log("this is my user Data", testObject);
 };
 
 export const loadExistingPokemon = json => {
-  console.dir(json);
   const game_div = document.getElementById("game-view");
   game_div.innerHTML = `<div id="pokemon-display"></div>`;
   const poke_div = document.getElementById("pokemon-display");
-  json.forEach(poke =>
-    poke_div.insertAdjacentHTML("beforeend", renderPokemon(poke))
-  );
+  json.forEach(poke => {
+    poke_div.insertAdjacentHTML("beforeend", renderPokemon(poke));
+    const pokeCard = document.querySelector(".pokemon-card");
+    objToDataSet(poke, pokeCard);
+  });
+  //moretesting logs
+  getRoundData();
+  ///delete above when ready
   attachNavListeners();
   attachPokeActionListeners();
 };
