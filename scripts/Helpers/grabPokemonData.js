@@ -1,7 +1,5 @@
 export const grabPokeDataFromDivs = pokeCards => {
-  console.log(pokeCards);
   return [...pokeCards].map(card => {
-    console.log(card);
     const actionDivs = card.getElementsByClassName("pokemon-actions");
     const current_action = actionDivs[0].querySelector(".highlight-action")
       .innerText;
