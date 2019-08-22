@@ -1,5 +1,5 @@
 export const newForm = () => `<div class="title-area">
-<form name="new-game" id="new-game">
+<form autocomplete="off" name="new-game" id="new-game">
   <input
     type="text"
     name="name"
