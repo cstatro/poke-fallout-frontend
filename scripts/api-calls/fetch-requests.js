@@ -1,3 +1,5 @@
+import { postConfig } from "./config.js";
+
 const URL = "http://localhost:3000";
 
 const POKEMONS = `${URL}/pokemons`;
@@ -25,3 +27,12 @@ export const killRejects = (userId, keepId, callback) => {
     .then(resp => resp.json())
     .then(json => callback());
 };
+
+export const roundUpdate = (userId, roundData, callback) => {
+  fetch(`${URL}/process-turn/${userId}`, postConfig(roundData))
+  .then(resp => resp.json())
+  .then(json => callback(json));
+
+
+
+}
