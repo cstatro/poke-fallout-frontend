@@ -61,5 +61,5 @@ export const loadExistingPokemon = json => {
   ///delete above when ready
   attachNavListeners();
   attachPokeActionListeners();
-  roundUpdate(5, getRoundData(), data => console.dir(data))
+  // roundUpdate(5, getRoundData(), data => console.dir(data))
 };
