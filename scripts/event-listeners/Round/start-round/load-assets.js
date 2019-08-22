@@ -1,4 +1,4 @@
-import { loadUser } from "../../../api-calls/fetch-requests.js";
+import { loadUser, roundUpdate } from "../../../api-calls/fetch-requests.js";
 import { objToDataSet } from "../../../Helpers/mapObjToDataSet.js";
 import { makeStatDiv } from "../../../templates/Round/stat-div.js";
 import { renderPokemon } from "../../../templates/round/pokemon-card.js";
@@ -60,4 +60,5 @@ export const loadExistingPokemon = json => {
   ///delete above when ready
   attachNavListeners();
   attachPokeActionListeners();
+  roundUpdate(5, getRoundData(), data => console.dir(data))
 };

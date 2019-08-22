@@ -7,5 +7,7 @@ export const getRoundData = () => {
   const pokeDivs = document.querySelectorAll(".pokemon-card");
   const pokeObjects = grabPokeDataFromDivs(pokeDivs);
   const newObj = { ...userInfo, pokemons: pokeObjects };
+  console.log("The data:")
+  console.dir(newObj)
   return newObj;
 };
