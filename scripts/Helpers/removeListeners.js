@@ -1,13 +1,15 @@
 import { loadAssets } from "../event-listeners/Round/start-round/load-assets.js";
 import { getRoundData } from "./roundDataSelection.js";
 import { roundUpdate } from "../api-calls/fetch-requests.js";
+
 export const removeEventListeners = () => {
   const userId = document.querySelector(".game-area").dataset.id;
+  const roundData = getRoundData();
   removeNavListeners();
   removeConfirmListeners();
   removePokemonDivs();
   removeUserStats();
-  roundUpdate(`${userId}`, getRoundData(), console.log);
+  roundUpdate(`${userId}`, roundData, console.log);
   loadAssets();
 };
 
