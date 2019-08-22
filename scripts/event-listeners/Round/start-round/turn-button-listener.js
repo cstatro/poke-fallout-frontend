@@ -1,5 +1,9 @@
+import { getRoundData } from "../../../Helpers/roundDataSelection.js";
+
 export const attachTurnButtonListener = () => {
-  document.getElementById("confirm", e => {
-    console.log(e.target);
+  console.log("fucking javascript");
+  document.getElementById("confirm").addEventListener("click", e => {
+    console.log(getRoundData());
+    getRoundData;
   });
 };

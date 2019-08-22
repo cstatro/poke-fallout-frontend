@@ -6,6 +6,7 @@ import { attachNavListeners } from "./attach-nav-listeners.js";
 import { attachPokeActionListeners } from "./attach-pokecard-listeners.js";
 import { fromSetUserData } from "../../../Helpers/objectFromDataset.js";
 import { getRoundData } from "../../../Helpers/roundDataSelection.js";
+import { attachTurnButtonListener } from "./turn-button-listener.js";
 
 export const loadAssets = () => {
   const gameArea = document.querySelector(".game-area");
@@ -56,7 +57,7 @@ export const loadExistingPokemon = json => {
     objToDataSet(poke, pokeCard);
   });
   //moretesting logs
-
+  attachTurnButtonListener();
   ///delete above when ready
   attachNavListeners();
   attachPokeActionListeners();
