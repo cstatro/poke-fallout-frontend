@@ -56,7 +56,7 @@ export const loadExistingPokemon = json => {
     objToDataSet(poke, pokeCard);
   });
   //moretesting logs
-  getRoundData();
+
   ///delete above when ready
   attachNavListeners();
   attachPokeActionListeners();
