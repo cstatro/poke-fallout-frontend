@@ -53,7 +53,7 @@ export const loadExistingPokemon = json => {
   const poke_div = document.getElementById("pokemon-display");
   json.forEach(poke => {
     poke_div.insertAdjacentHTML("beforeend", renderPokemon(poke));
-    const pokeCard = document.querySelector(".pokemon-card");
+    const pokeCard = document.querySelector(`#p${poke.id}`);
     objToDataSet(poke, pokeCard);
   });
   //moretesting logs

@@ -1,5 +1,5 @@
 export const renderPokemon = poke => `
-    <div class="pokemon-card">
+    <div id="p${poke.id}" class="pokemon-card">
         <div class="pokemon-info">
 
             <div class="pokemon-identity">
