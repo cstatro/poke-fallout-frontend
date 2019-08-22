@@ -3,6 +3,7 @@ import { objToDataSet } from "../../../Helpers/mapObjToDataSet.js";
 import { makeStatDiv } from "../../../templates/Round/stat-div.js";
 import { renderPokemon } from "../../../templates/round/pokemon-card.js";
 import { attachNavListeners } from "./attach-nav-listeners.js";
+import { attachPokeActionListeners } from "./attach-pokecard-listeners.js";
 
 export const loadAssets = () => {
   const gameArea = document.querySelector(".game-area");
@@ -48,4 +49,5 @@ export const loadExistingPokemon = json => {
     poke_div.insertAdjacentHTML("beforeend", renderPokemon(poke))
   );
   attachNavListeners();
+  attachPokeActionListeners();
 };
