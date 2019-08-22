@@ -31,6 +31,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("./assets/nuke.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 .title-text {
   color: yellow;
