@@ -54,12 +54,32 @@ export const loadExistingPokemon = json => {
   json.forEach(poke => {
     poke_div.insertAdjacentHTML("beforeend", renderPokemon(poke));
     const pokeCard = document.querySelector(`#p${poke.id}`);
+
     objToDataSet(poke, pokeCard);
+    setCurrentAction(poke.current_action, pokeCard);
+    setfeedLevel(poke.food_policy, pokeCard);
   });
   //moretesting logs
   attachTurnButtonListener();
   ///delete above when ready
   attachNavListeners();
   attachPokeActionListeners();
-  // roundUpdate(5, getRoundData(), data => console.dir(data))
+};
+
+const setfeedLevel = (policy, div) => {
+  const foodBar = div.querySelectorAll(".pokemon-actions")[1];
+  [...foodBar.children].forEach(button => {
+    if (button.dataset.food == policy) {
+      button.className += " highlight-action";
+    }
+  });
+};
+
+const setCurrentAction = (current_action, div) => {
+  const actionBar = div.querySelectorAll(".pokemon-actions")[0];
+  [...actionBar.children].forEach(button => {
+    if (button.innerText === current_action) {
+      button.className += " highlight-action";
+    }
+  });
 };
