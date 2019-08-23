@@ -29,7 +29,7 @@ const removeUserStats = () => {
 };
 
 const removePokemonDivs = () => {
-  document.querySelector("#pokemon-display").innerHTML = "";
+  document.querySelector("#pokemon-display").innerHTML = document.querySelector("#pokemon-display").innerHTML;
 };
 
 const removeNotifications = () => {
