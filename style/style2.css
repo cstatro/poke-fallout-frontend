@@ -76,7 +76,7 @@ body {
   padding: 5px;
   border: green 0.3em solid;
   border-radius: 0.4em;
-  margin: 0.8em;
+  margin: 0.3em;
 }
 
 #notifications {
@@ -472,7 +472,7 @@ body {
 
   color: #dcff19;
   background: #1c161b;
-  border: solid #dcff19 0.3vw;
+  border: solid #f15f1c 0.3vw;
   border-radius: 0.6vw;
 }
 
