@@ -66,18 +66,18 @@ export const renderPokemon = poke => `
 
         <div class="pokemon-actions">
 
-            <button class="pokemon-action-button">Idle</button>
-            <button class="pokemon-action-button">Breeding</button>
-            <button class="pokemon-action-button">Exploring</button>
-            <button class="pokemon-action-button">Farming</button>
+            <button title="health+,loyalty+" class="pokemon-action-button">Idle</button>
+            <button  class="pokemon-action-button">Breeding</button>
+            <button title="health-,loyalty-" class="pokemon-action-button">Exploring</button>
+            <button title="food supply+,loyalty-" class="pokemon-action-button">Farming</button>
 
         </div>
         <div class="pokemon-actions">
 
-            <button data-food="0" class="pokemon-action-button">None</button>
-            <button data-food="1" class="pokemon-action-button">Meager</button>
-            <button data-food="2" class="pokemon-action-button">Modest</button>
-            <button data-food="3" class="pokemon-action-button">Generous</button>
+            <button data-food="0" title="nourishment--" class="pokemon-action-button">None</button>
+            <button data-food="1" title="nourishment-" class="pokemon-action-button">Meager</button>
+            <button data-food="2" title="nourishment=" class="pokemon-action-button">Modest</button>
+            <button data-food="3" title="nourishment+" class="pokemon-action-button">Generous</button>
 
         </div>
 
