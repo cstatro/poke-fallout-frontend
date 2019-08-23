@@ -14,7 +14,7 @@ body {
 
   background: #a1c950;
 }
-
+ 
 #main {
   margin: 2vh 2vw;
   width: 96vw;
@@ -67,17 +67,35 @@ body {
 
   border: solid #1c161b 0.5vw;
   border-radius: 0.5vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #stats div {
   list-style: none;
-  font-size: 1.2em;
+
+  
   background: rgb(92, 221, 92);
-  padding: 5px;
   border: green 0.3em solid;
   border-radius: 0.4em;
-  margin: 0.3em;
+
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#stats div p {
+  font-size: 1em;
+  padding: 2% 2%;
+  width: 100%;
+}
+
 
 #notifications {
   overflow: scroll;
