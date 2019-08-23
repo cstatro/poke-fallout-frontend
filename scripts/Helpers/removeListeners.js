@@ -9,8 +9,7 @@ export const removeEventListeners = () => {
   removeConfirmListeners();
   removePokemonDivs();
   removeUserStats();
-  roundUpdate(`${userId}`, roundData, console.log);
-  loadAssets();
+  roundUpdate(`${userId}`, roundData, loadAssets);
 };
 
 const removeNavListeners = () => {
