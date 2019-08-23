@@ -31,14 +31,16 @@ const renderUserStats = () => {
     authority,
     facility_tier,
     facility_cleanliness: cleanliness,
-    pokemon_capacity: max_capacity
+    pokemon_capacity: max_capacity,
+    food: food_supply
   } = userData;
   const statList = {
     name,
     authority,
     cleanliness,
     facility_tier,
-    max_capacity
+    max_capacity,
+    food_supply
   };
   for (const key in statList) {
     statsDiv.innerHTML += makeStatDiv(key, statList[key]);

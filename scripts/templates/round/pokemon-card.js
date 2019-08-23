@@ -69,7 +69,7 @@ export const renderPokemon = poke => `
             <button class="pokemon-action-button">Idle</button>
             <button class="pokemon-action-button">Breeding</button>
             <button class="pokemon-action-button">Exploring</button>
-            <button class="pokemon-action-button">Training</button>
+            <button class="pokemon-action-button">Farming</button>
 
         </div>
         <div class="pokemon-actions">
