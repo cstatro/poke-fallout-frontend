@@ -7,6 +7,7 @@ import { attachPokeActionListeners } from "./attach-pokecard-listeners.js";
 import { fromSetUserData } from "../../../Helpers/objectFromDataset.js";
 import { getRoundData } from "../../../Helpers/roundDataSelection.js";
 import { attachTurnButtonListener } from "./turn-button-listener.js";
+import { makeNotifications } from "../../../templates/round/notifications.js";
 
 export const loadAssets = () => {
   const gameArea = document.querySelector(".game-area");
@@ -14,13 +15,14 @@ export const loadAssets = () => {
 };
 
 const renderAssetsFromJson = json => {
+  const notificationArea = document.getElementById("notifications");
   const pokemons = json.pokemons.filter(p => p.alive === true);
   const gameArea = document.querySelector(".game-area");
   objToDataSet(json, gameArea);
+  notificationArea.innerHTML += makeNotifications(json.notifications);
   renderUserStats();
   loadExistingPokemon(pokemons);
 };
-
 const renderUserStats = () => {
   const userData = document.querySelector(".game-area").dataset;
   const statsDiv = document.querySelector("#stats");
