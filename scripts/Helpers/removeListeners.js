@@ -9,6 +9,7 @@ export const removeEventListeners = () => {
   removeConfirmListeners();
   removePokemonDivs();
   removeUserStats();
+  removeNotifications();
   roundUpdate(`${userId}`, roundData, loadAssets);
 };
 
@@ -29,4 +30,9 @@ const removeUserStats = () => {
 
 const removePokemonDivs = () => {
   document.querySelector("#pokemon-display").innerHTML = "";
+};
+
+const removeNotifications = () => {
+  const notificationArea = document.getElementById("notifications");
+  notificationArea.innerHTML = "";
 };
