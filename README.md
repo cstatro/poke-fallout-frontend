@@ -11,7 +11,7 @@ A game where players breed and raise pokemon in a post-apocolyptic future.
 ## Tech
 
 * Javascript
-* Rails API backend ([repo](https://github.com/cstatro/poke-fallout-backend)
+* Rails API backend ([repo](https://github.com/cstatro/poke-fallout-backend))
 
 ## Gameplay
 
