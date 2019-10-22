@@ -3,6 +3,8 @@
 
 A game where players breed and raise mutant pokemon in a post-apocolyptic future.
 
+[Try](https://pokemon-fallout.netlify.com/) it for yourself!
+
 ## Contributors
 
 * [Colin Tatro](https://github.com/cstatro)
