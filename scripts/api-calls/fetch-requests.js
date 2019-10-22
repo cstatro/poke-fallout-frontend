@@ -1,6 +1,6 @@
 import { postConfig } from "./config.js";
 
-const URL = "http://localhost:3000";
+const URL = "https://afternoon-reaches-34775.herokuapp.com/";
 
 const POKEMONS = `${URL}/pokemons`;
 const USERS = `${URL}/users`;
@@ -30,9 +30,6 @@ export const killRejects = (userId, keepId, callback) => {
 
 export const roundUpdate = (userId, roundData, callback) => {
   fetch(`${URL}/process-turn/${userId}`, postConfig(roundData))
-  .then(resp => resp.json())
-  .then(json => callback(json));
-
-
-
-}
+    .then(resp => resp.json())
+    .then(json => callback(json));
+};
