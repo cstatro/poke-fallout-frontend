@@ -38,7 +38,7 @@ const renderUserStats = () => {
     name,
     authority,
     cleanliness,
-    facility_tier,
+    // facility_tier,
     max_capacity,
     food_supply
   };

@@ -14,7 +14,7 @@ body {
 
   background: #a1c950;
 }
- 
+
 #main {
   margin: 2vh 2vw;
   width: 96vw;
@@ -76,11 +76,9 @@ body {
 #stats div {
   list-style: none;
 
-  
   background: rgb(92, 221, 92);
   border: green 0.3em solid;
   border-radius: 0.4em;
-
 
   margin: 0;
   padding: 0;
@@ -96,13 +94,12 @@ body {
   width: 100%;
 }
 
-
 #notifications {
   overflow: scroll;
   padding: 2px 0;
 
   width: 96%;
-  height: 30%;
+  height: 20%;
 
   background: #363834;
 
@@ -126,7 +123,7 @@ body {
 
 #confirm {
   width: 96%;
-  height: 16%;
+  height: 10%;
 
   color: #dcff19;
 
@@ -189,7 +186,7 @@ body {
 }
 
 #nav-bar {
-  width: 98%;
+  width: 96%;
   height: 8%;
 
   border: solid #1c161b 0.5vw;
@@ -248,7 +245,7 @@ body {
 
 #game-view {
   width: 98%;
-  height: 86%;
+  height: 100%;
 
   border: solid #1c161b 0.5vw;
   border-radius: 0.5vw;
